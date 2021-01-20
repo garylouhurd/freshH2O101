@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <title>FreshH2O-101</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/logos/FreshH2Ologo_v3.png" alt="logotemp" width="auto" height="50" class="d-inline-block align-top">
+            </a>
+              <ul class="nav justify-content-end">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="consideration.html">Consideration</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="waterChemistry.html">Water Chemistry</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="supplies.html" tabindex="-1" aria-disabled="true">Equipment</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="signUp_signIn.html" tabindex="-1" aria-disabled="true">Sign Up/Sign In</a>
+                  </li>
+                </ul>
+          </div>
+        </nav>
+</header>
+
+    <section class="profile">
+
+        <div class="dateCreated">
+            <p>Date Aquarium Created</p>
+            <input type="date" />
+        </div>
+
+        <div class="equipment">
+            <p>Equipment Checklist</p>
+            <input type="radio" id="aquarium" name="equipment" value="aquarium">
+            <label for="aquarium">Aquarium and Aquarium Furniture</label>
+            <input type="radio" id="substrate" name="equipment" value="substrate">
+            <label for="substrate">Substrate</label>
+            <input type="radio" id="heater" name="equipment" value="heater">
+            <label for="heater">Heater</label>
+            <input type="radio" id="light" name="equipment" value="light">
+            <label for="light">Light</label>
+            <input type="radio" id="thermometer" name="equipment" value="thermometer">
+            <label for="thermometer">Thermometer</label>
+            <input type="radio" id="decor" name="equipment" value="decor">
+            <label for="decor">Decoration</label>
+            <input type="radio" id="waterConditioners" name="equipment" value="waterConditioners">
+            <label for="waterConditioners">Water Conditioners</label>
+        </div>
+        <div class="fish">
+            <label for="fish1">Fish 1:</label>
+            <input type="text" id="fish1" name="fish1"><br>
+            <label for="fish2">Fish 2:</label>
+            <input type="text" id="fish2" name="fish2"><br>
+            <label for="fish3">Fish 3:</label>
+            <input type="text" id="fish3" name="fish3"><br>
+            <label for="fish4">Fish 4:</label>
+            <input type="text" id="fish4" name="fish4"><br>
+            <label for="fish5">Fish 5:</label>
+            <input type="text" id="fish5" name="fish5"><br>
+
+        </div>
+        <div class="plants">
+            <label for="plant1">Plant 1:</label>
+            <input type="text" id="plant1" name="plant1"><br>
+            <label for="plant2">Plant 2:</label>
+            <input type="text" id="plant2" name="plant2"><br>
+            <label for="plant3">Plant 3:</label>
+            <input type="text" id="plant3" name="plant3"><br>
+            <label for="plant4">Plant 4:</label>
+            <input type="text" id="plant4" name="plant4"><br>
+            <label for="plant5">Plant 5:</label>
+            <input type="text" id="plant5" name="plant5"><br>
+
+        </div>
+        <div class="h20Chemistry">
+            <div class="profilepH">
+                <label for="pH1">pH Reading 1:</label>
+                <input type="text" id="pH1" name="pH1"><br>
+                <label for="pH2">pH Reading 2:</label>
+                <input type="text" id="pH2" name="pH2"><br>
+                <label for="pH3">pH Reading 3:</label>
+                <input type="text" id="pH3" name="pH3"><br>
+                <label for="pH4">pH Reading 4:</label>
+                <input type="text" id="pH4" name="pH4"><br>
+                <label for="pH5">pH Reading 5:</label>
+                <input type="text" id="pH5" name="pH5"><br>
+            </div>
+            <div class="profileAmonnia">
+                <label for="ammonia1">Ammonia Reading 1:</label>
+                <input type="text" id="ammonia1" name="ammonia1"><br>
+                <label for="ammonia2">Ammonia Reading 2:</label>
+                <input type="text" id="ammonia2" name="ammonia2"><br>
+                <label for="ammonia3">Ammonia Reading 3:</label>
+                <input type="text" id="ammonia3" name="ammonia3"><br>
+                <label for="ammonia4">Ammonia Reading 4:</label>
+                <input type="text" id="ammonia4" name="ammonia4"><br>
+                <label for="ammonia5">Ammonia Reading 5:</label>
+                <input type="text" id="ammonia5" name="ammonia5"><br>
+            </div>
+            <div class="profileNitrites">
+                <label for="nitrites1">Nitrites Reading 1:</label>
+                <input type="text" id="nitrites1" name="nitrites1"><br>
+                <label for="nitrites2">Nitrites Reading 2:</label>
+                <input type="text" id="nitrites2" name="nitrites2"><br>
+                <label for="nitrites3">Nitrites Reading 3:</label>
+                <input type="text" id="nitrites3" name="nitrites3"><br>
+                <label for="nitrites4">Nitrites Reading 4:</label>
+                <input type="text" id="nitrites4" name="nitrites4"><br>
+                <label for="nitrites5">Nitrites Reading 5:</label>
+                <input type="text" id="nitrites5" name="nitrites5"><br>
+
+            </div>
+            <div class="profileNitrates">
+                <label for="nitrates1">Nitrates Reading 1:</label>
+                <input type="text" id="nitrates1" name="nitrates1"><br>
+                <label for="nitrates2">Nitrates Reading 2:</label>
+                <input type="text" id="nitrates2" name="nitrates2"><br>
+                <label for="nitrates3">Nitrates Reading 3:</label>
+                <input type="text" id="nitrates3" name="nitrates3"><br>
+                <label for="nitrates4">Nitrates Reading 4:</label>
+                <input type="text" id="nitrates4" name="nitrates4"><br>
+                <label for="nitrates5">Nitrates Reading 5:</label>
+                <input type="text" id="nitrates5" name="nitrates5"><br>
+            </div>
+        </div>
+        <div class="maintenaceSchedule">
+            <div title="Add to Calendar" class="addeventatc">
+                Schedule Maintenance
+                <span class="start">02/03/2021 08:00 AM</span>
+                <span class="end">02/03/2021 10:00 AM</span>
+                <span class="timezone">America/Los_Angeles</span>
+                <span class="title">Summary of the event</span>
+                <span class="description">Description of the event</span>
+                <span class="location">Location of the event</span>
+            </div>
+
+        </div>
+        <div class="notes">
+            <label for="notes">Notes on aquarium:</label>
+
+<textarea id="aquarium" name="notes" rows="10" cols="50">
+
+</textarea>
+        </div>
+
+
+
+    </section>
+
+    <footer>
+      <div class="closing">
+        <div class="siteMap">
+          <p>Resources</p>
+          <nav class="nav flex-column">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="benefits.html">Benefits</a>
+            <a class="nav-link" href="consideration.html">Consideration</a>
+            <a class="nav-link" href="supplies.html.html">Equipment</a>
+            <a class="nav-link" href="waterChemistry.html">WaterChemistry</a>
+            <a class="nav-link" href="waterChemistry.html">pH</a>
+            <a class="nav-link" href="waterChemistry.html">Ammonia</a>
+            <a class="nav-link" href="waterChemistry.html">Nitrites</a>
+            <a class="nav-link" href="waterChemistry.html">Nitrates</a>
+            <a class="nav-link" href="waterChemistry.html">Nitrogen Cycle</a>
+          </nav>
+        </div>
+          <div class="account">
+            <p>Account</p>
+            <a href="signUp_signIn.html" class="nav-link">My Account</a>
+            <a href="signUp_signIn.html" class="nav-link">Create Account</a>
+          </div>
+          <div class="shopping">
+            <p>Find Products</p>
+            <a href="#" class="nav-link">FreshH20 Product Locator COMING SOON</a>
+          </div>
+          <div class="social">
+            <p>Follow Us</p>
+            <img class="social-icons" src="images/socialMedia/instagram.png" alt="">
+            <img class="social-icons" src="images/socialMedia/tiktok.png" alt="">
+          </div>
+        </div>
+  
+          <div class="gn">
+            <p>2021 Hurd Yenerall DigiDudes</p>
+          </div>
+        </div>
+
+      </div>
+      
+    </footer>
+    
+ 
+    
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

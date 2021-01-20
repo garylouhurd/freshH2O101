@@ -6,38 +6,61 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
-    <title>FreshH2O-101</title>
+    <title>FreshH2O-101 Water Chemistry</title>
   </head>
   <body>
     <header>
-            <nav class="navbar navbar-light">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="index.html">
-                    <img src="images/FreshH2Ologo.png" alt="logotemp" width="auto" height="50" class="d-inline-block align-top">
-                  </a>
-                    <ul class="nav justify-content-end">
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="consideration.html">Consideration</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Water Chemistry</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="supplies.html" tabindex="-1" aria-disabled="true">Supplies</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Sign Up/Sign In</a>
-                        </li>
-                      </ul>
-                </div>
-              </nav>
+      <nav class="navbar navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/FreshH2Ologo.png" alt="logotemp" width="auto" height="50" class="d-inline-block align-top">
+            </a>
+              <ul class="nav justify-content-end">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="consideration.html">Consideration</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="waterChemistry.html">Water Chemistry</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="supplies.html" tabindex="-1" aria-disabled="true">Equipment</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="signUp_signIn.html" tabindex="-1" aria-disabled="true">Sign Up/Sign In</a>
+                  </li>
+                </ul>
+          </div>
+        </nav>
     </header>
+    
+    
+    <div class="jumbotron jumbotron-fluid jumbo_consideration">
+      <div class="jumbo_consider_text">
+        <h1 class="display-4">Water Chemistry</h1>
+        <p class="lead">Understanding Aquarium Water Chemistry.</p>
+        <hr class="my-2">
+      </div> 
+      <div class="jumbo_consider_img">
+        <img src="images/water/smallWater.jpg" alt="example of aquarium">
+      </div>
+    </div>
 
-    <section>
-        <h2>Water Parameters</h2>
+    <div class="research">
+      <h3>Synopsis</h3>
+      <p>Water Chemistry is the single most important component of a successful aquarium. Without proper water chemistry, an aquarium will never be successful.  </p>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Water Parameters Guide
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h2>Water Parameters</h2>
         <table class="table table-sm table-striped">
             <thead>
                 <tr>
@@ -66,22 +89,8 @@
                     <td>6.5 - 7.0</td>
                     <td>7.8 - 8.4</td>
                 </tr>
-                <tr>
-                    <th scope="row">KG</th>
-                    <td>4&deg - 8&deg</td>
-                    <td>10&deg - 25&deg</td>
-                    <td>1&deg - 4&deg</td>
-                    <td>1&deg - 4&deg</td>
-                    <td>8&deg - 18&deg</td>
-                </tr>
-                <tr>
-                    <th scope="row">GH</th>
-                    <td>4&deg - 10&deg</td>
-                    <td>15&deg - 25&deg</td>
-                    <td>3&deg - 6&deg</td>
-                    <td>3&deg - 6&deg</td>
-                    <td>10&deg - 20&deg</td>
-                </tr>
+                
+                
                 <tr>
                     <th scope="row">Ammonia</th>
                     <td>0.0</td>
@@ -106,59 +115,109 @@
                     <td>&lt10 ppm</td>
                     <td>&lt30 ppm</td>
                 </tr>
-                <tr>
-                    <th scope="row">Phosphate</th>
-                    <td>&lt0.5 ppm</td>
-                    <td>&lt0.5 ppm</td>
-                    <td>&lt0.5 ppm</td>
-                    <td>&lt0.5 ppm</td>
-                    <td>&lt0.5 ppm</td>
-                </tr>
+                
             </tbody>
         </table>
-    </section>
-    <section class="aquariumCycle">
-        <img class="aquariumCycle_nitro-graphic" src="images/nitrogencycle.png" alt="nitrogen cycle">
-        <p class="aquariumCycle_text">Cycling your new aquarium, which will establish or start the growth of nitrifying “beneficial” bacteria, will start when you add your first fish. The new aquarium cycling will take 4 or more weeks. The process depends on the water volume, the
-            number of fish, the amount of food given, and the amount of space that the beneficial bacteria has to grow on. It will be best to start slow and allow the cycle to properly go through its cycle while trying to avoid the dreaded new tank syndrome,
-            which will result in fish dying. Here is how the nitrogen cycle works. Let's say we are working on a ten gallon aquarium. You have added your substrate, plants/decor, treated water, added some seed bacteria to the aquarium, and your first
-            four fish, guppies, in this example. You feed your fish some food. The guppies eat the food and then process the food and eliminate it. The waste turns into Ammonia, the beneficial bacteria then converts the Ammonia to Nitrite, then the Nitrite
-            is then converted into Nitrate by the beneficial bacteria and then Nitrate is removed thru regular water changes.
-        </p>
-        <p>As the days go by beneficial bacteria is reproducing, being able to process more and more. Once the water parameters have spiked, the parameters will start going down and your aquarium parameters will become more stable. Once the parameters have
-            stabilized, you can slowly start adding more fish. It is best practice to slowly add new fish to the aquarium so as to not unbalance the water parameters.
-        </p>
-        <p>There are several products you can add when setting up your new aquarium that will help with seeding your aquarium with beneficial bacteria.
-        </p>
-        <p>When setting up your new aquarium, test your water before anything is added to the aquarium. Twenty four hours after you add your fish, test your water again, and do a 25% water change. In another 24 hours, test your water again and do another
-            25 % water change. Do this for your first week, then test your water every other day for the second week and do 25% water changes. After you see your water parameters spike, watch for your parameters to drop and then you can slowly add more
-            fish. Never do more than a 40% water change on your aquarium at this stage as it will basically put you back to square one. Once your aquarium has become established, you can begin maintaining your aquarium with weekly water changes.</p>
-        <p>pH is the measure of water acidiciness or basic of the water. 7.0 is considered neutral. Freshwater aquariums do best between 6.8 and 7.6, while some specific fish may prefer higher or lower, but most freshwater fish prefer the pH to be between
-            6.8 and 7.6. </p>
-        <p>GH or general hardness of water is the measurement of the calcium, magnesium and other ions in the water. The best rule of thumb is to keep your aquarium water’s hardness to your local water. It is also best to not try and alter the hardness of
-            your water with additives as this will cause your water to go up and down and stress your fish out.
-        </p>
-        <p>Carbonate Hardness or Alkalinity, KH, is the measurement of the carbonates and bicarbonates in the water. Carbonates help to stabilize pH in the aquarium and these are replenished during regular water changes so there is really no need to add
-            additives to your water. </p>
-        <p>Ammonia is a byproduct of fish waste. Ammonia is deadly to fish. A well established and maintained aquarium should have zero ammonia. If there is ammonia in the aquarium, it is best to figure out if feeding too much, too many fish or lack of beneficial
-            bacteria. While trying to determine why ammonia levels are too high, do 25%-30% water changes daily until level is acceptable. IF the ammonia level is sky high, do at least a 60% percent water change, avoid feeding for 24 hours and try to
-            vacuum the gravel to remove any detritus or debris from the substrate. Ammonia is a killer to fish and even as little as 2 ppm is deadly.
-        </p>
-        <p>Nitrite converted from ammonia and high levels of nitrite inhibit the oxygen exchange in the fishes’ bloodstream and will cause them to suffocate. If you notice your fish swimming at the top of the water level gasping for air, your fish are likely
-            suffering from nitrite poisoning and immediate action needs to be taken, just like with ammonia poisoning. </p>
-        <p>Nitrate is the conversion of the nitrite by the beneficial bacteria. While nitrate is not as harmful as nitrite, it is still harmful to fish and long term exposure can stunt growth and exposure to high levels for long periods of time can cause
-            undue stress and compromise their immune systems. Live plants are excellent at keeping nitrate levels down.
-        </p>
-        <p>Too much phosphate in the water is not necessarily harmful to fish. High levels of phosphate can contribute to algae blooms and the dreadly hair algae. Phosphate can be in the water, fish food, certain types of activated carbon, decaying organic
-            matter and some additives.
-        </p>
-        <h2>Water Conditioners</h2>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                The Nitrogen Cycle
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Cycling your new aquarium, which will establish or start the growth of nitrifying “beneficial” bacteria, will start when you add your first fish. The new aquarium cycling will take 4 or more weeks. The process depends on the water volume, the
+                  number of fish, the amount of food given, and the amount of space that the beneficial bacteria has to grow on. It will be best to start slow and allow the cycle to properly go through its cycle while trying to avoid the dreaded new tank syndrome,
+                  which will result in fish dying. Here is how the nitrogen cycle works. Let's say we are working on a ten gallon aquarium. You have added your substrate, plants/decor, treated water, added some seed bacteria to the aquarium, and your first
+                  four fish, guppies, in this example. You feed your fish some food. The guppies eat the food and then process the food and eliminate it. The waste turns into Ammonia, the beneficial bacteria then converts the Ammonia to Nitrite, then the Nitrite
+                  is then converted into Nitrate by the beneficial bacteria and then Nitrate is removed thru regular water changes.
+              </p>
+              <p>As the days go by beneficial bacteria is reproducing, being able to process more and more. Once the water parameters have spiked, the parameters will start going down and your aquarium parameters will become more stable. Once the parameters have
+                  stabilized, you can slowly start adding more fish. It is best practice to slowly add new fish to the aquarium so as to not unbalance the water parameters.
+              </p>
+              <p>There are several products you can add when setting up your new aquarium that will help with seeding your aquarium with beneficial bacteria.
+              </p>
+              <p>When setting up your new aquarium, test your water before anything is added to the aquarium. Twenty four hours after you add your fish, test your water again, and do a 25% water change. In another 24 hours, test your water again and do another
+                  25 % water change. Do this for your first week, then test your water every other day for the second week and do 25% water changes. After you see your water parameters spike, watch for your parameters to drop and then you can slowly add more
+                  fish. Never do more than a 40% water change on your aquarium at this stage as it will basically put you back to square one. Once your aquarium has become established, you can begin maintaining your aquarium with weekly water changes.</p>
+                  <p><strong>Water Conditioners</strong></p>
         <p>Creating the perfect living environment for fish will involve treating your water to make the conditions favorable for your fish to inhabit. There are many different companies and brands that make conditioners, some are better than others, but
             they all serve the same purpose, to treat your water and make the water parameters perfect for your fish. Water conditioners will eliminate chlorine, remove heavy metals, ammonia, nitrites and nitrates from your water. Some water conditioners
             also contain a slime coating that is important for protecting the fish.</p>
         <p>Another water conditioner product to look for when starting your aquarium is a product that will jump start your beneficial bacteria. Several companies make this product but two of the best are Stability by Seachem and Seed by Aquavitro. Both
             of these products safely and rapidly establish the beneficial bacteria in the aquarium and the filter media. </p>
-        <p>Some fish will require certain trace elements, regulators, buffers and salts for specific types of fish, and those can be found at your local fish stores. Most of the time, the big box stores will not stock these.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                pH
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>pH is the measure of water acidiciness or basic of the water. 7.0 is considered neutral. Freshwater aquariums do best between 6.8 and 7.6, while some specific fish may prefer higher or lower, but most freshwater fish prefer the pH to be between
+                  6.8 and 7.6. </p>
+                
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Ammonia
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Ammonia is a byproduct of fish waste. Ammonia is deadly to fish. A well established and maintained aquarium should have zero ammonia. If there is ammonia in the aquarium, it is best to figure out if feeding too much, too many fish or lack of beneficial
+                    bacteria. While trying to determine why ammonia levels are too high, do 25%-30% water changes daily until level is acceptable. IF the ammonia level is sky high, do at least a 60% percent water change, avoid feeding for 24 hours and try to
+                    vacuum the gravel to remove any detritus or debris from the substrate. Ammonia is a killer to fish and even as little as 2 ppm is deadly.
+                </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Nitrite
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Nitrite converted from ammonia and high levels of nitrite inhibit the oxygen exchange in the fishes’ bloodstream and will cause them to suffocate. If you notice your fish swimming at the top of the water level gasping for air, your fish are likely
+                      suffering from nitrite poisoning and immediate action needs to be taken, just like with ammonia poisoning. </p>
+                  </div>
+                </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  Nitrate
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Nitrate is the conversion of the nitrite by the beneficial bacteria. While nitrate is not as harmful as nitrite, it is still harmful to fish and long term exposure can stunt growth and exposure to high levels for long periods of time can cause
+                    undue stress and compromise their immune systems. Live plants are excellent at keeping nitrate levels down.
+                </p>
+                
+                </div>
+              </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+        
+        
+        
+        
+        
+      
 
     </section>     
 
@@ -167,23 +226,22 @@
         <div class="siteMap">
           <p>Resources</p>
           <nav class="nav flex-column">
-            <a class="nav-link" href="#">Home</a>
-            <a class="nav-link" href="#">FreshH20</a>
-            <a class="nav-link" href="#">Benefits</a>
-            <a class="nav-link" href="#">Consideration</a>
-            <a class="nav-link" href="#">WaterChemistry</a>
-            <a class="nav-link" href="#">pH</a>
-            <a class="nav-link" href="#">Ammonia</a>
-            <a class="nav-link" href="#">Nitrites</a>
-            <a class="nav-link" href="#">Nitrates</a>
-            <a class="nav-link" href="#">Nitrogen Cycle</a>
-            <a class="nav-link" href="#">Sign Up/Sign In</a>
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="benefits.html">Benefits</a>
+            <a class="nav-link" href="consideration.html">Consideration</a>
+            <a class="nav-link" href="supplies.html.html">Equipment</a>
+            <a class="nav-link" href="waterChemistry.html">WaterChemistry</a>
+            <a class="nav-link" href="waterChemistry.html">pH</a>
+            <a class="nav-link" href="waterChemistry.html">Ammonia</a>
+            <a class="nav-link" href="waterChemistry.html">Nitrites</a>
+            <a class="nav-link" href="waterChemistry.html">Nitrates</a>
+            <a class="nav-link" href="waterChemistry.html">Nitrogen Cycle</a>
           </nav>
         </div>
           <div class="account">
             <p>Account</p>
-            <a href="#" class="nav-link">My Account</a>
-            <a href="#" class="nav-link">Create Account</a>
+            <a href="signUp_signIn.html" class="nav-link">My Account</a>
+            <a href="signUp_signIn.html" class="nav-link">Create Account</a>
           </div>
           <div class="shopping">
             <p>Find Products</p>
