@@ -1,0 +1,20 @@
+{
+  "name": "freshH2O-101",
+  "version": "1.0.0",
+  "description": "Beginner's Guide to Creating a Freshwater Aquarium",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garylouhurd/freshH2O101.git"
+  },
+  "keywords": [],
+  "author": "Gary Hurd & Nick Yenerall",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garylouhurd/freshH2O101/issues"
+  },
+  "homepage": "https://github.com/garylouhurd/freshH2O101#readme"
+}
