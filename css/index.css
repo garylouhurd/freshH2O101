@@ -382,8 +382,131 @@ Desire to please
 On the edge of seventeen
     ~Stevie Nicks Edge of 17
 */
+/*
+#b8eaff light blue
+#618fb9 med blue
+#1f3442 dark blue
+*/
+.signBody{
+    height: 50vh;
+}
+.signContainer{
+    --color-primary: #b8eaff;
+    --color-primary-dark: #1f3442;
+    --color-secondary:#618fb9;
+    --color-error: #8B4C39;
+    --border-radius-left: 25px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin: 3rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background: var(--color-primary);
+    width: 400px;
+    max-width: 400px;
+}
+.form--hidden{
+    display: none;
+}
+
+.form > *:first-child{
+    margin-top: 0;
+}
+.form >*:last-child{
+    margin-bottom: 0;
+}
+
+.form__title{
+    margin-bottom: 2rem;
+}
+.form__message {
+    margin-bottom: 1rem;
+    text-align: center;
+
+}
+
+.form__message--success{
+    color: var(--color-success);
+}
+
+.form__message--error{
+    color: var(--color-error);
+}
+
+.form__input-group{
+    margin-bottom: 1rem;
+}
+.form__input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: 1px solid #1F3442;
+    outline: none;
+    background: #b8eaff;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.form__input:focus{
+    border-color: #1f3442;
+    background: #fff;
+}
+
+.form__input--error{
+    color: #8B4C39;
+    border-color: #8B4C39;
+}
+
+.form__input--error-message{
+    margin-top: .5rem;
+    font-size: .85rem;
+    color: #8b4c39;
+}
+
+.form__button{
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.form__button:hover{
+    background-color:#1F3442;
+}
+
+.form__button:active{
+    transform: scale(.98);
+}
+
+.form__text{
+    text-align: center;
+}
+.form__link{
+    color: #618fb9;
+    text-decoration: none;
+    cursor: pointer;
+}
+.form__link:hover{
+    color: #1F3442;
+    text-decoration: underline;
+}
 
 
+
+
+
+
+
+/*
 .SignInContainer {
     width: 400px;
     max-width: 400px;
@@ -396,7 +519,7 @@ On the edge of seventeen
 
 .form__input,
 .form__button {
-    font: 500 1rem 'Quicksand', sans-serif;
+    font: 500 1rem;
 }
 
 .form--hidden {
