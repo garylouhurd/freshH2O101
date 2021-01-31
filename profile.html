@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/index.css">
+    <!--<link rel="stylesheet" href="css/index.css">-->
     <title>FreshH2O-101</title>
   </head>
   <body>
@@ -38,11 +38,211 @@
 
     <section class="profile">
 
-        <div class="dateCreated">
-            <p>Date Aquarium Created</p>
-            <input type="date" />
+        <div class="date">
+          <label for="aquariumCreated">Date Aquarium Created:</label>
+          <input type="date" id="aquariumCreated" name="aquarium-created-date">
         </div>
+    </section>
+    <section class="checkList">
+      <h2>Aquarium Checklist</h2>
+      <ol>
+        <li>Budget for Aquarium</li>
+            <div>
+              <input type="radio" id="low" name="budget" value="low">
+              <label for="low">Low $0 - $500</label>
+            </div>
+            <div>
+              <input type="radio" id="medium" name="budget" value="medium">
+              <label for="medium">Medium $501 - $1,000</label>
+            </div>
+            <div>
+              <input type="radio" id="high" name="budget" value="high">
+              <label for="heigh">High $1,001+</label>
+            </div>
+        <li>Placement of Aquarium</li>
+            <div>
+              <input type="radio" id="yes" name="placementYes" value="yes">
+              <label for="yes">Yes</label>
+            </div>
+            <div>
+              <input type="radio" id="no" name="placementNo" value="no">
+              <label for="no">No</label>
+            </div>
+            <div>
+              <label for="placementLocation">Location:</label>
+              <input type="text" id="placementLocation" name="location" required>
+            </div>
+        <li>Size of Aquarium</li>
+            <div>
+              <input type="radio" id="nano" name="sizeOfAquarium" value="nano">
+              <label for="nano">Nano 5-10 gallons</label>
+                <div>
+                  <ul>
+                    <li>Endler's Livebearer</li>
+                    <li>Scarlet Badies</li>
+                    <li>Norman's Lampeye Killifish</li>
+                    <li>Salt-and-Pepper Corys</li>
+                    <li>Galaxy Danios</li>
+                    <li>Green Neon Rasboras</li>
+                    <li>Scorpion Betta</li>
+                    <li>Green Neon Tetras</li>
+                    <li>Diptail Pencilfish</li>
+                    <li>Chili Rasboras</li>
+                  </ul>
+                </div>
+            </div>
+            <div>
+              <input type="radio" id="small" name="sizeOfAquarium" value="small">
+              <label for="small">Small 15-29 gallons</label>
+              <div>
+                <ul>
+                  <li>Platy</li>
+                  <li>Swordtail</li>
+                  <li>Mollies</li>
+                  <li>Cory Catfish</li>
+                  <li>Dwarf Gouramis</li>
+                  <li>Neon Tetras</li>
+                  <li>Zebra Danios</li>
+                  <li>Fancy Guppies</li>
+                  <li>Otocinclus</li>
+                  <li>Harlaquin Rasboras</li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <input type="radio" id="medium" name="sizeOfAquarium" value="medium">
+              <label for="medium">Medium 30-46 gallons</label>
+              <div>
+                <ul>
+                  <li>Dwarf Ciclids</li>
+                  <li>Tetras</li>
+                  <li>Cory Catfish</li>
+                  <li>Rainbow Fish</li>
+                  <li>Guppies</li>
+                  <li>Gouramis</li>
+                  <li>Rasboras</li>
+                  <li>Mollies</li>
+                  <li>Angelfish</li>
+                  <li>Platy</li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <input type="radio" id="large" name="sizeOfAquarium" value="large">
+              <label for="large">
+                Large 55+ gallons</label>
+                <div>
+                  <ul>
+                    <li>Ciclids</li>
+                    <li>Angelfish</li>
+                    <li>Rainbows</li>
+                    <li>Tetras</li>
+                    <li>Rasboras</li>
+                    <li>Gouramis</li>
+                    <li>Cory Catfish</li>
+                    <li>Danios</li>
+                    <li>Mollies</li>
+                    <li>Platy</li>
+                  </ul>
+                </div>
+            </div>
+        <li>Type of Aquarium</li>
+        <div>
+          <input type="radio" id="passiveCommunity" name="aquariumType" value="passiveCommunity">
+          <label for="passiveCommunity">Passive Community</label>
+        </div>
+        <div>
+          <input type="radio" id="semiAggressiveCommunity" name="aquariumType" value="semiAggressiveCommunity">
+          <label for="semiAggressiveCommunity">Semi-Aggressive Community</label>
+        </div>
+        <div>
+          <input type="radio" id="speciesSpecific" name="aquariumType" value="speciesSpecific">
+          <label for="speciesSpecific">Species Specific</label>
+        </div>
+        <div>
+          <input type="radio" id="regional" name="aquariumType" value="regional">
+          <label for="regional">Regional Biotope</label>
+        </div>
+        <div>
+          <input type="radio" id="brackishWater" name="aquariumType" value="brackishWater">
+          <label for="brackishWater">Brackish Water</label>
+        </div>
+        <div>
+          <input type="radio" id="planted" name="aquariumType" value="planted">
+          <label for="planted">Planted</label>
+        </div>
+        <li>Equipment for Aquarium</li>
+        <div>
+          <input type="checkbox" id="aquariumAndStand" name="aquariumAndStand">
+          <label for="aquariumAndStand">Aquarium and Stand</label>
+        </div>
+        <div>
+          <input type="checkbox" id="substrate" name="substrate">
+          <label for="substrate">Substrate</label>
+        </div>
+        <div>
+          <input type="checkbox" id="heater" name="heater">
+          <label for="heater">Heater and Thermometer</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Light" name="light">
+          <label for="Light">Light</label>
+        </div>
+        <div>
+          <input type="checkbox" id="decor" name="decor">
+          <label for="decor">Rocks, Wood, Decorations</label>
+        </div>
+        <div>
+          <input type="checkbox" id="waterConditionerSupplements" name="waterConditionerSupplements">
+          <label for="waterConditionerSupplements">Water Conditioners and Supplements</label>
+        </div>
+      </ol>
+    </section>
 
+    <section>
+      <h2>Setting Up Aquarium Step</h2>
+      <p>24-48 hours prior to setting up aquarium</p>
+      <ol>
+        <li>Place aqurium in selected area. Making sure aqurium is level.</li>
+        <li>Rinse substrate, following manufactors instructions. Rinse substrate very well. Set aside one empty bag of the substrate, to use in the filling of the aquarium.</li>
+        <li>If using aged water (water allowed to sit for 24 hours to "age". Aging water basically removes chlorine and gasses, making the water safe for aquariums.</li>
+        <li>Assemble filter, placing media into the filter. Set aside.</li>
+        <p>Day of Setting up Aquarium</p>
+        <li>Carefully place substrate into the aquarium. Be careful not to just "dump" substrate. Doing so could possible crack the bottom of the aquarium.</li>
+        <li>Ater substrate, place rocks, wood, plants and/or decor.</li>
+        <li>If using a caniste filter, place intake and return hoses. Place heater and thermometer.</li>
+        <li>After everything has been placed, it is time to start adding the water. Before adding the water, place the substrate bag over the rocks, wood, plants and decor. Or you can use a bowl to pour the water into. Slowy start adding the water. Be careful not to disturb the substrate and decor.</li>
+        <li>Once the water has been added, allow the aquarium to set for 30 minutes. After the 30 minutes, plug and start the filter, according to manufactors instructions. After the filter is running, plug the heater in.</li>
+        <li>Allow the aquarium to run for a few days, to allow everything to settle. You can add a little food to the aquarium to begin cycling. Hold off on adding fish until the cycling has completed.</li>
+        <li>Take water readings and chart the readings. Once the aquarium reaches it peak and begins to tamper off, you can slowly start adding fish. Do not add all fish at one time. Stagger the fish additions slowly.</li>
+        <li>24 hours after adding fish, take another set of water parameter readings.</li>
+        <li>Continue this process until aquarium is fully stocked. </li>
+      </ol>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
         <div class="equipment">
             <p>Equipment Checklist</p>
             <input type="radio" id="aquarium" name="equipment" value="aquarium">
@@ -204,7 +404,8 @@
     </footer>
     
  
-    
+    -->
+
     
     <!-- Optional JavaScript; choose one of the two! -->
 
